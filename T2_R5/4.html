@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hemos cambiado de ubicación esta página</h1>
+    <p>Será redirigido en:</p>
+    <p id="count">5</p>
+    <script>
+        (function(){
+            var seconds=5;
+            function update() {
+                document.getElementById('count') = seconds;
+            }
+            update()
+                var interval = setInterval(function(){
+                    seconds --
+    
+                    if (seconds<=0) {
+                        clearInterval(interval)
+                        window.location.replace("http://www.pccomponentes.com");
+                    } else {
+                        update();
+                    }
+                }, 1000);
+        })
+    </script>
+</body>
+</html>
