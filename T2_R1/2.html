@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cumpleaños en Domingo</title>
+  <title>Document</title>
 </head>
 <body>
   <script>
@@ -15,7 +15,7 @@
       let month = parseInt(partes[1]);
       let day = parseInt(partes[2]);
 
-      console.log("Años en los que tu cumpleaños cae en domingo:");
+      document.write("Años en los que tu cumpleaños cae en domingo:<br>");
 
       for (let y = year; y <= 2100; y++) {
         let fecha = new Date(y, month - 1, day);
